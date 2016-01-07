@@ -1,6 +1,7 @@
 Lita.configure do |config|
   # The name your robot will use.
   config.robot.name = "Sushant Bajracharya"
+  config.robot.mention_name = "Sus"
 
   # The locale code for the language to use.
   # config.robot.locale = :en
@@ -19,11 +20,11 @@ Lita.configure do |config|
   # The adapter you want to connect with. Make sure you've added the
   # appropriate gem to the Gemfile.
   config.robot.adapter = :hipchat
-  config.adapters.hipchat.password = "yourpassword"
+  config.adapters.hipchat.password = "sdf"
 
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
-  # config.adapters.password = "theflyest1"
+  # config.adapters.password = "sdfsd"
 
   ## Example: Set options for the Redis connection.
   config.redis.host = "127.0.0.1"
@@ -33,5 +34,5 @@ Lita.configure do |config|
   ## documentation for options.
   # config.handlers.some_handler.some_config_key = "value"
   config.adapters.hipchat.debug = true
-  config.adapters.hipchat.rooms = :test
+  config.adapters.hipchat.rooms = :all
 end
